@@ -16,7 +16,8 @@ Paper Wallet Checker fetches the balance by checking several blockchain services
 - chain.so
 - insight.bitpay.com
 - toshi.io
-- tradeblock.com 
+- tradeblock.com
+- coinprism.info 
 
 It works only for Bitcoin wallets.
 

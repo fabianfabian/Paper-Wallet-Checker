@@ -17,6 +17,7 @@
 		DFACF06C1AED90FD0059CA0F /* TradeblockBalanceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFACF06B1AED90FD0059CA0F /* TradeblockBalanceFetcher.swift */; };
 		DFC366681AEBDC2200BBA020 /* BalanceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC366671AEBDC2200BBA020 /* BalanceFetcher.swift */; };
 		DFC3666A1AEBDE9000BBA020 /* BlockchainInfoBalanceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC366691AEBDE9000BBA020 /* BlockchainInfoBalanceFetcher.swift */; };
+		DFCD2B471AED8A6200F5187C /* CoinPrismBalanceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD2B461AED8A6200F5187C /* CoinPrismBalanceFetcher.swift */; };
 		DFDDCD321AEC2BCF003924A5 /* BalanceCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDDCD311AEC2BCF003924A5 /* BalanceCellTableViewCell.swift */; };
 		DFDDCD341AEC2C4E003924A5 /* BalanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDDCD331AEC2C4E003924A5 /* BalanceTableViewController.swift */; };
 		DFDDCD361AEC3DED003924A5 /* ChainSoBalanceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDDCD351AEC3DED003924A5 /* ChainSoBalanceFetcher.swift */; };
@@ -324,6 +325,7 @@
 		DFACF06B1AED90FD0059CA0F /* TradeblockBalanceFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeblockBalanceFetcher.swift; sourceTree = "<group>"; };
 		DFC366671AEBDC2200BBA020 /* BalanceFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceFetcher.swift; sourceTree = "<group>"; };
 		DFC366691AEBDE9000BBA020 /* BlockchainInfoBalanceFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockchainInfoBalanceFetcher.swift; sourceTree = "<group>"; };
+		DFCD2B461AED8A6200F5187C /* CoinPrismBalanceFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinPrismBalanceFetcher.swift; sourceTree = "<group>"; };
 		DFDDCD311AEC2BCF003924A5 /* BalanceCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceCellTableViewCell.swift; sourceTree = "<group>"; };
 		DFDDCD331AEC2C4E003924A5 /* BalanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTableViewController.swift; sourceTree = "<group>"; };
 		DFDDCD351AEC3DED003924A5 /* ChainSoBalanceFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainSoBalanceFetcher.swift; sourceTree = "<group>"; };
@@ -723,6 +725,7 @@
 				DFDDCD431AEC4BF4003924A5 /* InsightBitpayBalanceFetcher.swift */,
 				DFDDCD481AEC4E0E003924A5 /* LocalBitcoinsBalanceFetcher.swift */,
 				DFDDCD451AEC4D2C003924A5 /* ToshiBalanceFetcher.swift */,
+				DFCD2B461AED8A6200F5187C /* CoinPrismBalanceFetcher.swift */,
 				DFACF06B1AED90FD0059CA0F /* TradeblockBalanceFetcher.swift */,
 				DFDDCD4A1AEC4F58003924A5 /* BlockBalanceFetcher.swift */,
 			);
@@ -863,6 +866,7 @@
 				DFDDCD361AEC3DED003924A5 /* ChainSoBalanceFetcher.swift in Sources */,
 				DFEB804C1AED286B00CF2801 /* ApiKeys.swift in Sources */,
 				DFDDCD3C1AEC455F003924A5 /* BlockrBalanceFetcher.swift in Sources */,
+				DFCD2B471AED8A6200F5187C /* CoinPrismBalanceFetcher.swift in Sources */,
 				DFDDCD4B1AEC4F58003924A5 /* BlockBalanceFetcher.swift in Sources */,
 				DF2F822B1AEBC9C800FE307E /* AppDelegate.swift in Sources */,
 				DFDDCD401AEC4785003924A5 /* ChainBalanceFechter.swift in Sources */,

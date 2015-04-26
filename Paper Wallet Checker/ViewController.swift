@@ -148,6 +148,12 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, Bala
         blockBF.scanCounter = self.scanCounter
         blockBF.fetch(address)
         
+        var coinprismBF = CoinPrismBalanceFetcher()
+        coinprismBF.delegate = self
+        coinprismBF.sourceTitle = "coinprism.com"
+        coinprismBF.scanCounter = self.scanCounter
+        coinprismBF.fetch(address)
+        
         var tradeblockBF = TradeblockBalanceFetcher()
         tradeblockBF.delegate = self
         tradeblockBF.sourceTitle = "tradeblock.com"
