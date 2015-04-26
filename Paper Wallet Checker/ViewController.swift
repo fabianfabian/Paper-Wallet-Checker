@@ -159,6 +159,12 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, Bala
         tradeblockBF.sourceTitle = "tradeblock.com"
         tradeblockBF.scanCounter = self.scanCounter
         tradeblockBF.fetch(address)
+        
+        var luxstackBF = LuxstackBalanceFetcher()
+        luxstackBF.delegate = self
+        luxstackBF.sourceTitle = "luxstack.com"
+        luxstackBF.scanCounter = self.scanCounter
+        luxstackBF.fetch(address)
     }
     
     func readerDidCancel(reader: QRCodeReaderViewController) {

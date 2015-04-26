@@ -15,6 +15,7 @@
 		DF2F82351AEBC9C800FE307E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2F82331AEBC9C800FE307E /* LaunchScreen.xib */; };
 		DF425C5B1AEC18BD0007BB60 /* BlockCypherBalanceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF425C5A1AEC18BD0007BB60 /* BlockCypherBalanceFetcher.swift */; };
 		DFACF06C1AED90FD0059CA0F /* TradeblockBalanceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFACF06B1AED90FD0059CA0F /* TradeblockBalanceFetcher.swift */; };
+		DFACF06E1AEDA0600059CA0F /* LuxstackBalanceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFACF06D1AEDA0600059CA0F /* LuxstackBalanceFetcher.swift */; };
 		DFC366681AEBDC2200BBA020 /* BalanceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC366671AEBDC2200BBA020 /* BalanceFetcher.swift */; };
 		DFC3666A1AEBDE9000BBA020 /* BlockchainInfoBalanceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC366691AEBDE9000BBA020 /* BlockchainInfoBalanceFetcher.swift */; };
 		DFCD2B471AED8A6200F5187C /* CoinPrismBalanceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD2B461AED8A6200F5187C /* CoinPrismBalanceFetcher.swift */; };
@@ -323,6 +324,7 @@
 		DF425D6C1AEC1A800007BB60 /* InterfaceBuilderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilderKit.framework; path = Library/Frameworks/InterfaceBuilderKit.framework; sourceTree = DEVELOPER_DIR; };
 		DF425D6D1AEC1A800007BB60 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		DFACF06B1AED90FD0059CA0F /* TradeblockBalanceFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeblockBalanceFetcher.swift; sourceTree = "<group>"; };
+		DFACF06D1AEDA0600059CA0F /* LuxstackBalanceFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuxstackBalanceFetcher.swift; sourceTree = "<group>"; };
 		DFC366671AEBDC2200BBA020 /* BalanceFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceFetcher.swift; sourceTree = "<group>"; };
 		DFC366691AEBDE9000BBA020 /* BlockchainInfoBalanceFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockchainInfoBalanceFetcher.swift; sourceTree = "<group>"; };
 		DFCD2B461AED8A6200F5187C /* CoinPrismBalanceFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinPrismBalanceFetcher.swift; sourceTree = "<group>"; };
@@ -728,6 +730,7 @@
 				DFCD2B461AED8A6200F5187C /* CoinPrismBalanceFetcher.swift */,
 				DFACF06B1AED90FD0059CA0F /* TradeblockBalanceFetcher.swift */,
 				DFDDCD4A1AEC4F58003924A5 /* BlockBalanceFetcher.swift */,
+				DFACF06D1AEDA0600059CA0F /* LuxstackBalanceFetcher.swift */,
 			);
 			name = BlockchainApis;
 			sourceTree = "<group>";
@@ -858,6 +861,7 @@
 				DFDDCD421AEC4881003924A5 /* BiteasyBalanceFetcher.swift in Sources */,
 				DFDDCD321AEC2BCF003924A5 /* BalanceCellTableViewCell.swift in Sources */,
 				DFDDCD461AEC4D2C003924A5 /* ToshiBalanceFetcher.swift in Sources */,
+				DFACF06E1AEDA0600059CA0F /* LuxstackBalanceFetcher.swift in Sources */,
 				DFDDCD441AEC4BF4003924A5 /* InsightBitpayBalanceFetcher.swift in Sources */,
 				DFDDCD491AEC4E0E003924A5 /* LocalBitcoinsBalanceFetcher.swift in Sources */,
 				DFDDCD3A1AEC440F003924A5 /* HelloblockBalanceFetcher.swift in Sources */,
