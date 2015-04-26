@@ -30,8 +30,8 @@ class BlockchainInfoBalanceFetcher : BalanceFetcher
                 
                 let numberFormatter = NSNumberFormatter()
                 let number = numberFormatter.numberFromString(balance)
-                if let numberFloatValue = number?.doubleValue {
-                    let balanceBtc = numberFloatValue / 100000000
+                if let numberDoubleValue = number?.doubleValue {
+                    let balanceBtc = numberDoubleValue / 100000000
                     self.delegate?.didReceiveBalance("\(balanceBtc)", scanCounter:self.scanCounter, sender:self)
                 }
             })
