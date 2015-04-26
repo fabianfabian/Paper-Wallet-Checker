@@ -14,7 +14,7 @@ class BlockCypherBalanceFetcher : BalanceFetcher
     
     override func fetch(address: String) {
 
-        let urlPath = "http://api.blockcypher.com/v1/btc/main/addrs/\(address)"
+        let urlPath = "https://api.blockcypher.com/v1/btc/main/addrs/\(address)"
         let url = NSURL(string: urlPath)
         if (url == nil) { return } 
         let session = NSURLSession.sharedSession()

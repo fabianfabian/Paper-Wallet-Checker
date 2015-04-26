@@ -14,7 +14,7 @@ class BlockrBalanceFetcher : BalanceFetcher
     
     override func fetch(address: String) {
         
-        let urlPath = "http://btc.blockr.io/api/v1/address/info/\(address)"
+        let urlPath = "https://btc.blockr.io/api/v1/address/info/\(address)"
         let url = NSURL(string: urlPath)
         if (url == nil) { return } 
         let session = NSURLSession.sharedSession()
