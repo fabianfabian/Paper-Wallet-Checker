@@ -1,4 +1,4 @@
-#Paper Waller Checker [website](http://paperwalletchecker.com)
+#Paper Wallet Checker [website](http://paperwalletchecker.com)
 
 Paper Wallet Checker allows you to check the balance of your paper wallet by scanner the QR code.
 
