@@ -1015,7 +1015,7 @@
 					"$(SDKROOT)/usr/lib/system",
 					"$(SDKROOT)/usr/lib/system/introspection",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Paper Check";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
@@ -1042,7 +1042,7 @@
 					"$(SDKROOT)/usr/lib/system",
 					"$(SDKROOT)/usr/lib/system/introspection",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Paper Check";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";

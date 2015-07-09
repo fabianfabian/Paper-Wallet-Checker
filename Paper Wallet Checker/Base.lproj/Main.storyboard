@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,20 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Paper Wallet Checker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLA-T3-LlC">
-                                <rect key="frame" x="16" y="28" width="288" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paper Wallet Checker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLA-T3-LlC">
+                                <rect key="frame" x="99" y="28" width="121" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ycN-l3-tRU">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycN-l3-tRU">
                                 <rect key="frame" x="0.0" y="126" width="320" height="442"/>
                                 <connections>
                                     <segue destination="I9k-uv-7Si" kind="embed" identifier="1" id="lM9-Nd-mTR"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tB-Ye-C18">
-                                <rect key="frame" x="106" y="79" width="108" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tB-Ye-C18">
+                                <rect key="frame" x="110" y="79" width="100" height="30"/>
                                 <state key="normal" title="Scan QR code">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -39,6 +39,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ycN-l3-tRU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="126" id="3SU-iz-6WN"/>
+                            <constraint firstAttribute="bottom" secondItem="ycN-l3-tRU" secondAttribute="bottom" id="55Z-b5-pxp"/>
+                            <constraint firstItem="3tB-Ye-C18" firstAttribute="top" secondItem="hLA-T3-LlC" secondAttribute="bottom" constant="36" id="HNu-Bw-YcP"/>
+                            <constraint firstAttribute="centerX" secondItem="3tB-Ye-C18" secondAttribute="centerX" id="Kn4-Yp-hFm"/>
+                            <constraint firstAttribute="centerX" secondItem="hLA-T3-LlC" secondAttribute="centerX" id="OjS-mn-9hs"/>
+                            <constraint firstAttribute="trailing" secondItem="ycN-l3-tRU" secondAttribute="trailing" id="P00-HN-Y5Z"/>
+                            <constraint firstItem="hLA-T3-LlC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="28" id="fYF-hx-rpM"/>
+                            <constraint firstItem="ycN-l3-tRU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qXS-8y-7at"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -62,19 +72,25 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kJJ-rO-3oG" id="AjX-nR-0Y0">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blockchain.info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfN-y8-ZeN">
-                                            <rect key="frame" x="8" y="8" width="141" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blockchain.info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfN-y8-ZeN">
+                                            <rect key="frame" x="8" y="9" width="112" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehq-mG-aHh">
-                                            <rect key="frame" x="143" y="7" width="169" height="24"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehq-mG-aHh">
+                                            <rect key="frame" x="268" y="5" width="44" height="27.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="zfN-y8-ZeN" secondAttribute="centerY" id="9AT-hE-Bi9"/>
+                                        <constraint firstAttribute="trailing" secondItem="ehq-mG-aHh" secondAttribute="trailing" constant="8" id="OVO-ot-jtc"/>
+                                        <constraint firstItem="zfN-y8-ZeN" firstAttribute="leading" secondItem="AjX-nR-0Y0" secondAttribute="leading" constant="8" id="U9k-rg-5NH"/>
+                                        <constraint firstAttribute="centerY" secondItem="ehq-mG-aHh" secondAttribute="centerY" id="udS-oE-TdA"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="balanceLabel" destination="ehq-mG-aHh" id="zoB-gC-3Al"/>

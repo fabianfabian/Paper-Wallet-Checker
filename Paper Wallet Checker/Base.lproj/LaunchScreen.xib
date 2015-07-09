@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -10,11 +10,11 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="o50-IY-8af">
-                    <rect key="frame" x="-137" y="149" width="886" height="748"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="o50-IY-8af">
+                    <rect key="frame" x="-200" y="80" width="1000" height="900"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Paper Wallet Checker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LN1-Z0-D87">
-                    <rect key="frame" x="127" y="42" width="346" height="75"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paper Wallet Checker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LN1-Z0-D87">
+                    <rect key="frame" x="141" y="30" width="318" height="38.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -23,9 +23,19 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="LN1-Z0-D87" secondAttribute="centerX" id="2ux-cT-Cuu"/>
-                <constraint firstAttribute="centerX" secondItem="o50-IY-8af" secondAttribute="centerX" id="WSm-vJ-uyx"/>
+                <constraint firstItem="LN1-Z0-D87" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="9FH-KR-F6v"/>
+                <constraint firstAttribute="centerX" secondItem="o50-IY-8af" secondAttribute="centerX" id="Zdc-2O-Ep9"/>
+                <constraint firstItem="LN1-Z0-D87" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="eLi-wF-l71"/>
+                <constraint firstAttribute="centerX" secondItem="o50-IY-8af" secondAttribute="centerX" id="ic7-0d-gJX"/>
+                <constraint firstItem="o50-IY-8af" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="kws-Wa-ofc"/>
+                <constraint firstAttribute="centerY" secondItem="o50-IY-8af" secondAttribute="centerY" constant="-230" id="ncK-c7-Kem"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ic7-0d-gJX"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
