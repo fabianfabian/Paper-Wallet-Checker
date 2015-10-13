@@ -21,7 +21,12 @@ class HelloblockBalanceFetcher : BalanceFetcher
         let task = session.dataTaskWithURL(url!, completionHandler: {
             data, response, error in
             
-            let json = JSON(data: data)
+            if (error != nil) {
+                print("Error: \(error)");
+                return;
+            }
+            
+            let json = JSON(data: data!)
             if let balance = json["data"]["address"]["balance"].double {
                 //            let balance = json["data"]["address"]["confirmedBalance"].floatValue
                 let balanceBtc = balance / 100000000

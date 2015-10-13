@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A1C093BFD3B2F85B9C50745 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE712A86FAF53011312AED39 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2A1C093BFD3B2F85B9C50745 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE712A86FAF53011312AED39 /* Pods.framework */; };
 		DF2F822B1AEBC9C800FE307E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F822A1AEBC9C800FE307E /* AppDelegate.swift */; };
 		DF2F822D1AEBC9C800FE307E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F822C1AEBC9C800FE307E /* ViewController.swift */; };
 		DF2F82301AEBC9C800FE307E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2F822E1AEBC9C800FE307E /* Main.storyboard */; };
@@ -767,7 +767,9 @@
 		DF2F821D1AEBC9C800FE307E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Fabian Lachman";
 				TargetAttributes = {
 					DF2F82241AEBC9C800FE307E = {
@@ -930,6 +932,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -945,7 +948,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -985,7 +988,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
@@ -1008,13 +1011,14 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				INFOPLIST_FILE = "Paper Wallet Checker/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 					"$(SDKROOT)/usr/lib/system/introspection",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.wizzbit.papercheck;
 				PRODUCT_NAME = "Paper Check";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1035,13 +1039,14 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				INFOPLIST_FILE = "Paper Wallet Checker/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 					"$(SDKROOT)/usr/lib/system/introspection",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.wizzbit.papercheck;
 				PRODUCT_NAME = "Paper Check";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -25,7 +25,12 @@ class LuxstackBalanceFetcher : BalanceFetcher
         let session = NSURLSession.sharedSession()
         let task : NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: {(data, response, error) in
             
-            let json = JSON(data: data)
+            if (error != nil) {
+                print("Error: \(error)");
+                return;
+            }
+            
+            let json = JSON(data: data!)
             if let balanceBtc = json["balance"].double {
 //          if let balanceBtc = json["unconfirmedBalance"].double {
                 

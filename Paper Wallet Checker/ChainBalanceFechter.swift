@@ -22,7 +22,12 @@ class ChainBalanceFetcher : BalanceFetcher
         let task = session.dataTaskWithURL(url!, completionHandler: {
             data, response, error in
             
-            let json = JSON(data: data)
+            if (error != nil) {
+                print("Error: \(error)");
+                return;
+            }
+            
+            let json = JSON(data: data!)
             if let balance = json[0]["total"]["balance"].double {
                 //            let balance = json["confirmed"]["balance"].floatValue
                 let balanceBtc = balance / 100000000

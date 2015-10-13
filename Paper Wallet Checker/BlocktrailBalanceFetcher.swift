@@ -22,7 +22,12 @@ class BlocktrailBalanceFetcher : BalanceFetcher
         let task = session.dataTaskWithURL(url!, completionHandler: {
             data, response, error in
             
-            let json = JSON(data: data)
+            if (error != nil) {
+                print("Error: \(error)");
+                return;
+            }
+            
+            let json = JSON(data: data!)
             if let balance = json["balance"].double {
                 let balanceBtc = balance / 100000000
                 

@@ -22,7 +22,12 @@ class BlockBalanceFetcher : BalanceFetcher
         let task = session.dataTaskWithURL(url!, completionHandler: {
             data, response, error in
             
-            let json = JSON(data: data)
+            if (error != nil) {
+                print("Error: \(error)");
+                return;
+            }
+            
+            let json = JSON(data: data!)
             let balance = json["data"]["available_balance"].stringValue
 //            let balance = json["data"]["pending_received_balance"].stringValue
 

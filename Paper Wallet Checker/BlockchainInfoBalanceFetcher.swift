@@ -18,15 +18,15 @@ class BlockchainInfoBalanceFetcher : BalanceFetcher
             let url = NSURL(string: urlPath)
             if (url == nil) { return } 
             let session = NSURLSession.sharedSession()
-            println(urlPath)
+            print(urlPath)
             let task = session.dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
-//                println(response)
-//                if (error != nil) {
-//                    // If there is an error in the web request, print it to the console
-//                    println(error.localizedDescription)
-//                }
+
+                if (error != nil) {
+                    print("Error: \(error)");
+                    return;
+                }
                 
-                let balance = NSString(data: data, encoding: NSUTF8StringEncoding) as! String
+                let balance = NSString(data: data!, encoding: NSUTF8StringEncoding) as! String
                 
                 let numberFormatter = NSNumberFormatter()
                 let number = numberFormatter.numberFromString(balance)

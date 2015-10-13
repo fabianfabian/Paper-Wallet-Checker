@@ -21,7 +21,12 @@ class TradeblockBalanceFetcher : BalanceFetcher
         let task = session.dataTaskWithURL(url!, completionHandler: {
             data, response, error in
             
-            let json = JSON(data: data)
+            if (error != nil) {
+                print("Error: \(error)");
+                return;
+            }
+            
+            let json = JSON(data: data!)
             if let balance = json["data"]["balance"]["confirmed"].double {
 //            if let balance = json["data"]["balance"]["unconfirmed"].double {
                 let balanceBtc = balance / 100000000

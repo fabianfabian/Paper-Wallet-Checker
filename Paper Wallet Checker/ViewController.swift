@@ -45,7 +45,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, Bala
         
         // Or by using the closure pattern
         reader.completionBlock = { (result: String?) in
-            println(result)
+            print(result)
         }
         
         self.balanceTableViewController?.results.removeAllObjects()
@@ -179,14 +179,14 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate, Bala
     
     func didReceiveBalance(balance : String, scanCounter: Int, sender: BalanceFetcher) {
         if (self.scanCounter == scanCounter) {
-            println("Source: \(sender.sourceTitle), Amount: \(balance)")
+            print("Source: \(sender.sourceTitle), Amount: \(balance)")
             self.balanceTableViewController?.addResult(balance, source: sender.sourceTitle)
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 self.balanceTableViewController?.tableView.reloadData()
             })
         }
         else {
-            println("Old scan - Source: \(sender.sourceTitle), Amount: \(balance)")
+            print("Old scan - Source: \(sender.sourceTitle), Amount: \(balance)")
         }
     }
     

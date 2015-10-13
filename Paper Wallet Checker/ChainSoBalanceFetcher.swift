@@ -21,7 +21,12 @@ class ChainSoBalanceFetcher : BalanceFetcher
         let task = session.dataTaskWithURL(url!, completionHandler: {
             data, response, error in
             
-            let json = JSON(data: data)
+            if (error != nil) {
+                print("Error: \(error)");
+                return;
+            }
+            
+            let json = JSON(data: data!)
             let balance = json["data"]["confirmed_balance"].stringValue
             
             self.delegate?.didReceiveBalance("\((balance as NSString).doubleValue)", scanCounter:self.scanCounter, sender: self)

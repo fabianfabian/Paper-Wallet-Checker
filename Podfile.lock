@@ -1,13 +1,13 @@
 PODS:
-  - QRCodeReader.swift (4.1.1)
-  - SwiftyJSON (2.2.0)
+  - QRCodeReader.swift (5.1.0)
+  - SwiftyJSON (2.3.0)
 
 DEPENDENCIES:
-  - QRCodeReader.swift (~> 4.1.0)
+  - QRCodeReader.swift (~> 5.1.0)
   - SwiftyJSON (>= 2.2)
 
 SPEC CHECKSUMS:
-  QRCodeReader.swift: f5c610a1cf10dab664d4fdf366f5772b24d93027
-  SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
+  QRCodeReader.swift: 69e4b105f0e4ff22a8f83e755cb7ae74994c0af5
+  SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
 
-COCOAPODS: 0.36.4
+COCOAPODS: 0.39.0

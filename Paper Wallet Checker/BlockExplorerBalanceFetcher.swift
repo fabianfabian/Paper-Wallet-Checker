@@ -14,20 +14,22 @@ class BlockExplorerBalanceFetcher : BalanceFetcher
     
     override func fetch(address: String) {
         
-        let urlPath = "https://blockexplorer.com/q/addressbalance/\(address)/1" // /1 = 1 conf, /6 = 6 conf
+        let urlPath = "https://blockexplorer.com/api/addr/\(address)"
         let url = NSURL(string: urlPath)
         if (url == nil) { return }
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithURL(url!, completionHandler: {
             data, response, error in
             
-            let balance = NSString(data: data, encoding: NSUTF8StringEncoding)
-            
-            println("balance: \(balance) data: \(data) response: \(response)")
-            
-            if let balanceBtc = balance?.doubleValue {
-                self.delegate?.didReceiveBalance("\(balanceBtc)", scanCounter:self.scanCounter, sender:self)
+            if (error != nil) {
+                print("Error: \(error)");
+                return;
             }
+            
+            let json = JSON(data: data!)
+            let balance = json["balance"].stringValue
+            
+            self.delegate?.didReceiveBalance("\((balance as NSString).doubleValue)", scanCounter:self.scanCounter, sender: self)
         })
         
         task.resume()
